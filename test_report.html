@@ -55,7 +55,7 @@
                aria-expanded="true" aria-controls="collapseUtilities"><i class="fas fa-times text-warning"></i> <span>suite1</span></a>
                <div id="collapseUtilities_suite1" class="collapse" aria-labelledby="headingUtilities"
                data-parent="#accordionSidebar">
-               <div id="collapse_suite1" class="bg-white py-2 collapse-inner rounded"><a class="collapse-item" href="#">TestCase12</a><a class="collapse-item" href="#">TestCase11</a></div></div></li><li class="nav-item">
+               <div id="collapse_suite1" class="bg-white py-2 collapse-inner rounded"><a class="collapse-item" href="#">TestCase11</a><a class="collapse-item" href="#">TestCase12</a></div></div></li><li class="nav-item">
                <a id="suite2" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities_suite2"
                aria-expanded="true" aria-controls="collapseUtilities"><i class="fas fa-times text-warning"></i> <span>suite2</span></a>
                <div id="collapseUtilities_suite2" class="collapse" aria-labelledby="headingUtilities"
@@ -98,7 +98,7 @@
                               <div class="col mr-2">
                                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                     Total suites</div>
-                                  <div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
+                                  <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
                               </div>
                               <div class="col-auto">
                                 <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
@@ -171,25 +171,6 @@
               <div id="Card_suites">
                 <!-- Content Row -->
             <div id="card_testssuite10" class="card_suite1 suites_test" style="display:none;">
-               <div class="row" id = "card_TestCase12">
-                  <div class="col-xl-12 col-lg-12">
-                    <div class="card shadow mb-4">
-                        <!-- Card Header - Dropdown -->
-                        <div  class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                           <h6 class="m-0 font-weight-bold text-primary">TestCase12</h6>
-                        </div>
-                           <!-- Card Body -->
-                        <div class="card-body">
-                           <table class="table table-borderless" style="margin: -0.5rem;">
-                              <thead>
-                                 <tr class ="border-bottom">
-                                    <th scope="col">Class</th>
-                                    <th scope="col">Asserts</th>
-                                    <th scope="col"></th>
-                                 </tr>
-                              </thead>
-                              <tbody><tr><td>test_this_is_a_test</td><td class="text-success">OK: This shouldn't happen</td><td class="text-secondary">OUTPUT: this is a test output</td></tr><td>test_this_is_a_test</td><td class="text-success">OK: This shouldn't happen</td><td class="text-secondary">OUTPUT: this is a test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening</td><td class="text-secondary">OUTPUT: this is another test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening2</td><td class="text-secondary">OUTPUT: this is another test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening3</td><td class="text-secondary">OUTPUT: this is another test output</td></tr></tbody></table></div></div></div></div></div><!-- Content Row -->
-            <div id="card_testssuite11" class="card_suite1 suites_test" style="display:none;">
                <div class="row" id = "card_TestCase11">
                   <div class="col-xl-12 col-lg-12">
                     <div class="card shadow mb-4">
@@ -208,6 +189,25 @@
                                  </tr>
                               </thead>
                               <tbody><tr><td>test_this_is_a_test</td><td class="text-success">OK: This shouldn't happen</td><td class="text-secondary">OUTPUT: this is a test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening</td><td class="text-secondary">OUTPUT: this is another test output</td></tr><td>test_no_output</td><td class="text-success">OK: </td></tr></tbody></table></div></div></div></div></div><!-- Content Row -->
+            <div id="card_testssuite11" class="card_suite1 suites_test" style="display:none;">
+               <div class="row" id = "card_TestCase12">
+                  <div class="col-xl-12 col-lg-12">
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Dropdown -->
+                        <div  class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                           <h6 class="m-0 font-weight-bold text-primary">TestCase12</h6>
+                        </div>
+                           <!-- Card Body -->
+                        <div class="card-body">
+                           <table class="table table-borderless" style="margin: -0.5rem;">
+                              <thead>
+                                 <tr class ="border-bottom">
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Asserts</th>
+                                    <th scope="col"></th>
+                                 </tr>
+                              </thead>
+                              <tbody><tr><td>test_this_is_a_test</td><td class="text-success">OK: This shouldn't happen</td><td class="text-secondary">OUTPUT: this is a test output</td></tr><td>test_this_is_a_test</td><td class="text-success">OK: This shouldn't happen</td><td class="text-secondary">OUTPUT: this is a test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening</td><td class="text-secondary">OUTPUT: this is another test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening2</td><td class="text-secondary">OUTPUT: this is another test output</td></tr><td>test_this_is_another_test</td><td class ="text-danger">ERROR: This is happening3</td><td class="text-secondary">OUTPUT: this is another test output</td></tr></tbody></table></div></div></div></div></div><!-- Content Row -->
             <div id="card_testssuite22" class="card_suite2 suites_test" style="display:none;">
                <div class="row" id = "card_TestCase21">
                   <div class="col-xl-12 col-lg-12">
@@ -291,7 +291,7 @@
                   <div class="card shadow mb-4">
                     <!-- Card Header - Dropdown -->
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                      <h6 class="m-0 font-weight-bold text-success">Total time:  0.00032 μs</h6>
+                      <h6 class="m-0 font-weight-bold text-success">Total time:  0.00031 μs</h6>
                     </div>
                     <!-- Card Body -->
                     <div class="card-body">
@@ -309,7 +309,7 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="text-right">4</td>
+                            <td class="text-right">5</td>
                             <td class="text-right">6</td>
                             <td class="text-right">13</td>
                             <td class="text-right">10</td>
@@ -332,14 +332,14 @@
                         <tbody>
                           <tr>
                <td>suite1</td>
-               <td>TestCase12</td>
-               <td class="text-right">2</td>
-               <td class="text-right">3</td>
-            </tr><tr>
-               <td>suite1</td>
                <td>TestCase11</td>
                <td class="text-right">2</td>
                <td class="text-right">1</td>
+            </tr><tr>
+               <td>suite1</td>
+               <td>TestCase12</td>
+               <td class="text-right">2</td>
+               <td class="text-right">3</td>
             </tr><tr>
                <td>suite2</td>
                <td>TestCase21</td>
@@ -400,27 +400,26 @@
 
       <!-- Custom scripts for all pages-->
       <script>
-        
-$("li.nav-item").on("click",function(e){
+        $("li.nav-item").on("click", function (e)
+{
   var id_li = $("a", this).attr("id");
   var class_card = 'card_' + id_li;
 
-  if (id_li === 'dashboard') 
-  {    
+  if (id_li === 'dashboard')
+  {
     $('#cardSummaryTables').show();
     $('#headCardSummary').show();
     $(this).addClass("active");
     $('#title_suite').hide();
     $('#Card_suites').hide();
 
-      if($('li > div').hasClass('show'))
-      {
-        $('li > div').collapse('hide');
-        console.log($('li > div'));
-      }
+    if ($('li > div').hasClass('show'))
+    {
+      $('li > div').collapse('hide');
+      console.log($('li > div'));
+    }
   }
-  else
-  if (id_li === class_card.substring(5)) 
+  else if (id_li === class_card.substring(5))
   {
     $('#Card_suites').show();
     $('#title_suite').show();
@@ -432,7 +431,8 @@ $("li.nav-item").on("click",function(e){
     $('#headCardSummary').hide();
     $('#cardSummaryTables').hide();
   }
-  $('.nav-item').not(this).removeClass("active"); 
+
+  $('.nav-item').not(this).removeClass("active");
 });
       </script>
     </body>
