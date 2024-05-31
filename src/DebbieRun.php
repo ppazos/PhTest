@@ -349,6 +349,9 @@ class DebbieRun {
       $failed_Summ = "";
       $succ_Summ = "";
       $cards_summary_suites = "";
+      $fatal_error = '';
+      $type_fail = '';
+      $is_failed  = false;
 
       foreach ($this->reports as $i => $test_suite_reports)
       {
@@ -382,6 +385,9 @@ class DebbieRun {
                      {
                         $total_failed++;
                         $failed++; //count the assert fail of each test per suite
+                        $tests_type_fail[] = [
+                           'case' => $test_case
+                        ];
                      }
                      else if ($assert_report['type'] == 'OK')
                      {
@@ -393,12 +399,14 @@ class DebbieRun {
                         $tests_fatal_error[] = [
                            'case' => $test_case
                         ];
+                        $failed++;
                      }
-                     else if ($assert_report['type'] == 'FAIL')
+                     else if ($assert_report['type'] == 'EXCEPTION')
                      {
-                        $tests_type_fail[] = [
+                        $tests_fatal_error[] = [
                            'case' => $test_case
                         ];
+                        $failed++;
                      }
                   }
                   $total_asserts++;
